@@ -38,7 +38,7 @@ html {
 #inicio .contenido header .contenido-header h1 {
     text-align: center;
     color: #ff5080;
-} 
+}
 
 #inicio .contenido header .contenido-header nav ul {
     list-style: none;
@@ -105,7 +105,7 @@ html {
     max-width: 700px;
     margin: 25px auto;
     font-size: 18px;
-    text-align: center; 
+    text-align: center;
 }
 
 #inicio .contenido .presentacion a {
@@ -235,7 +235,7 @@ html {
 }
 
 #servicios .fila .servicio:hover{
-   box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a; 
+   box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
 }
 
 #servicios .fila .servicio h4 {
@@ -433,6 +433,198 @@ html {
     opacity: 1;
     bottom: 0;
 }
+
+#contacto {
+    padding: 100px 15px;
+}
+
+#contacto .titulo-seccion {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3 ;
+    text-decoration-thickness: 5px;
+}
+
+#contacto .contenedor-form {
+    max-width: 1100px;
+    margin: auto;
+}
+#contacto  .contenedor-form .fila {
+    margin-bottom: 15px;
+}
+
+#contacto .contenedor-form .mitad {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191
+}
+
+#contacto .contenedor-form .mitad input {
+    width: 48%;
+}
+
+#contacto .contenedor-form .input-full {
+    width: 100%;
+}
+
+#contacto .btn-enviar {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#contacto .btn-enviar:hover {
+    background-color: #ff5080;
+    color: #fff;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    -webkit-flow-into: 26px;
+}
+
+@media screen and (max-width:800px) {
+    .redes{
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.responsive {
+        display: block;
+        background-color: #000;
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    nav.responsive ul{
+        display: block !important;
+        text-align: center;
+    }
+    nav.responsive ul li {
+        margin: 5px;
+    }
+    #icono-nav {
+        display: block;
+    }
+
+    #inicio .contenido .presentacion h2 {
+        font-size: 40px;
+    }
+
+    #sobremi {
+        padding: 50px 0;
+        display: block;
+    }
+
+    #sobremi  .contenedor-foto {
+        max-width: 200px;
+        margin: auto;
+    }
+    #sobremi .contenedor-foto img {
+        padding: 8px;
+    }
+    #sobremi .sobremi .titulo-seccion {
+        text-align: center;
+    }
+
+    #sobremi .sobremi h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #sobremi .sobremi h3 {
+        /* font-size:  25px; */
+        text-align: center;
+    }
+
+    #sobremi .sobremi p {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    #sobremi .sobremi a {
+        margin: 40px;
+        padding: 10px;
+    }
+
+    #servicios {
+        padding: 50px 15px;
+    }
+    #servicios .fila {
+        display: block;
+    }
+
+    #servicios .fila .servicio {
+        margin: 10px auto;
+
+    }
+    #contenedor-skills {
+        padding: 50px 20px;
+    }
+
+    #portfolio {
+        padding: 50px 0;
+    }
+
+    #portfolio .fila {
+        display: block;
+    }
+
+    #portfolio .fila .proyecto {
+        margin: 10px auto;
+
+    }
+
+    #contacto {
+        padding: 50px 15px;
+    }
+
+     #contacto .contenedor-form .mitad {
+        margin-bottom: 15px;
+        display: block;
+     }
+
+     #contacto .contenedor-form .mitad input {
+        width:100%;
+        margin-bottom: 15px;
+     }
+
+     .contenedor-skills {
+        padding: 10px;
+     }
+}
+
 
 
 

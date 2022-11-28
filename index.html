@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio personal</title>
-    <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png" />       
+    <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png" />
 </head>
+
 <body>
     <section id="inicio">
         <div class="contenido">
             <header>
                 <div class="contenido-header">
                     <h1>FM</h1>
-                    <nav class="nav">
-                       <ul class="links">
+                    <nav class="nav" id="nav">
+                        <ul class="links">
                             <li><a href="#inicio" class="seleccionado">Inicio</a></li>
                             <li><a href="#sobremi">Sobre mi</a></li>
                             <li><a href="#servicios">Hobbies</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
-                            <!-- <li><a href="#contacto">Contacto</a></li> -->
-                       </ul> 
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
                     </nav>
-                    <div class="icon-nav">
-                        <i class="fa-solid fa-bars"></i>       
+                    <div class="icon-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
                     </div>
 
                     <div class="redes">
-                        <a href="https://www.instagram.com/francomarquillas/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/franco-marquillas-81a298237/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/francomarquillas/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/franco-marquillas-81a298237/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/fRz505" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
 
@@ -40,7 +46,8 @@
                 <p class="bienvenida">Bienvenidos</p>
                 <h2>Soy <span>Franco Marquillas</span>, Desarrollador Web</h2>
                 <p class="descripcion">
-                    Programador frontend, de 25 años oriundo de la provincia de Salta (Capital) en busca de mi primer trabajo como desarrollador.
+                    Programador frontend, de 25 años oriundo de la provincia de Salta (Capital) en busca de mi primer
+                    trabajo como desarrollador.
                 </p>
                 <a href="#portfolio">Ir a Portfolio</a>
             </div>
@@ -55,7 +62,8 @@
             <p class="titulo-seccion">Sobre Mi</p>
             <h2>Hola, soy <span>Franco Marquillas</span></h2>
             <h3>Desarrollador Web</h3>
-            <p>Estudiante de programacion frontend angular en Coderhouse. Con ganas de aprender y crecer laboralmente.</p>
+            <p>Estudiante de programacion frontend angular en Coderhouse. Con ganas de aprender y crecer laboralmente.
+            </p>
             <a href="Franco_Marquillas__CV.pdf" download="Franco_Marquillas_cv">Descargar CV</a>
         </div>
     </section>
@@ -158,23 +166,23 @@
         <div class="fila">
             <div class="proyecto">
                 <a href="https://frz505.github.io/Interior-Consulta/" target="_blank">
-                <div class="overlay"></div>
-                <img src="img/interior.png" alt="">
-                <div class="info">
-                    <!-- <h4>Web diseñada con html y css.</h4> -->
-                    <p>Interior consulta</p>
-                </div>
-            </a>
+                    <div class="overlay"></div>
+                    <img src="img/interior.png" alt="">
+                    <div class="info">
+                        <!-- <h4>Web diseñada con html y css.</h4> -->
+                        <p>Interior consulta</p>
+                    </div>
+                </a>
             </div>
             <div class="proyecto">
                 <a href="https://frz505.github.io/Formulario/" target="_blank">
-                <div class="overlay"></div>
-                <img src="img/register.png" alt="">
-                <div class="info">
-                    <!-- <h4>Descripcion del proyecto</h4> -->
-                    <p>Register</p>
-                </div>
-            </a>
+                    <div class="overlay"></div>
+                    <img src="img/register.png" alt="">
+                    <div class="info">
+                        <!-- <h4>Descripcion del proyecto</h4> -->
+                        <p>Register</p>
+                    </div>
+                </a>
             </div>
             <div class="proyecto">
                 <a href="https://frz505.github.io/not-found-404-components/" target="_blank">
@@ -189,26 +197,62 @@
             </div>
             <div class="proyecto">
                 <a href="https://frz505.github.io/Clima/" target="_blank">
-                <div class="overlay"></div>
-                <img src="img/appclima3.jpg" alt="">
-                <div class="info">
-                    <!-- <h4>Descripcion del proyecto</h4> -->
-                    <p>Aplicacion del clima</p>
-                </div>
-            </a>
+                    <div class="overlay"></div>
+                    <img src="img/appclima3.jpg" alt="">
+                    <div class="info">
+                        <!-- <h4>Descripcion del proyecto</h4> -->
+                        <p>Aplicacion del clima</p>
+                    </div>
+                </a>
             </div>
             <div class="proyecto">
                 <a href="https://frz505.github.io/Home-Page/" target="_blank">
-                <div class="overlay"></div>
-                <img src="img/logopage.webp" alt="">
-                <div class="info">
-                    <!-- <h4>Descripcion del proyecto</h4> -->
-                    <p>Home Page</p>
-                </div>
-            </a>
+                    <div class="overlay"></div>
+                    <img src="img/logopage.webp" alt="">
+                    <div class="info">
+                        <!-- <h4>Descripcion del proyecto</h4> -->
+                        <p>Home Page</p>
+                    </div>
+                </a>
             </div>
         </div>
-        
+
     </section>
-</body> 
+
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="iput-mitad">
+                    <input type="text" placeholder="Dirección de email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Asunto" class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje.. " class="input-full">
+                    </textarea>
+                </div>
+                <input type="submit" value="Enviar mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Todos los derechos reservados - 2022</p>
+        <div class="redes">
+            <a href="https://www.instagram.com/francomarquillas/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/franco-marquillas-81a298237/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/fRz505" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
 </html>
