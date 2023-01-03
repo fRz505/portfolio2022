@@ -106,6 +106,7 @@ html {
     margin: 25px auto;
     font-size: 18px;
     text-align: center;
+    padding: 1rem;
 }
 
 #inicio .contenido .presentacion a {
@@ -506,6 +507,11 @@ footer a{
     display: inline-block;
     margin: 5px;
     -webkit-flow-into: 26px;
+}
+
+.cv {
+    text-align: center;
+    font-weight: bold;
 }
 
 @media screen and (max-width:800px) {
