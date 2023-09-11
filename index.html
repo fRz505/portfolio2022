@@ -11,6 +11,16 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio personal</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png" />
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('FSu-z0cPIPD8EzIAj')
+</script>
+
+<script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+
 </head>
 
 <body>
@@ -155,6 +165,15 @@
         <div class="skills">
             <div class="info">
                 <p><span class="lista"></span>Angular</p>
+                <span class="porcentaje">50%</span>
+            </div>
+            <div class="barra">
+                <div id="ng" class="barra-progreso4"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span>PHP</p>
                 <span class="porcentaje">40%</span>
             </div>
             <div class="barra">
@@ -224,20 +243,22 @@
     <section id="contacto">
         <h3 class="titulo-seccion">Contactanos ahora</h3>
         <div class="contenedor-form">
-            <form action="">
-                <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo" class="iput-mitad">
-                    <input type="text" placeholder="Dirección de email" class="input-mitad">
+            <form id="form" class="text-center">
+                <div class="field">
+                  <label for="from_name">Nombre: </label>
+                  <input type="text" name="from_name" id="from_name">
                 </div>
-                <div class="fila">
-                    <input type="text" placeholder="Asunto" class="input-full">
+                <div class="field">
+                  <label for="message">Mensaje: </label>
+                  <input type="text" name="message" id="message">
                 </div>
-                <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje.. " class="input-full">
-                    </textarea>
+                <div class="field">
+                  <label for="email_id">Email: </label>
+                  <input type="text" name="email_id" id="email_id">
                 </div>
-                <input type="submit" value="Enviar mensaje" class="btn-enviar">
-            </form>
+              
+                <input type="submit"  id="button" value="Enviar Email" style="margin-top: 10px;" >
+              </form>
         </div>
     </section>
 
@@ -254,7 +275,7 @@
     </footer>
 
     <script src="script.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
